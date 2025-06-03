@@ -26,8 +26,9 @@ head(digital_skills)
 # Cluster - grouped data (urban rural?)
 # Strata - grouped data to improve representatives
 # The reason of using nest is because there're still some errors/missings in data
-design_ds <- svydesign(ids = ~Household, strata = ~Area , data = digital_skills,
+design_ds <- svydesign(ids = ~Gender, strata = ~Area , data = digital_skills,
                        nest = TRUE)
+head(design_ds, 10)
 
 # calculating the mean of ??
-svy
+svymean(~Gender, design_ds)
