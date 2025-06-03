@@ -29,8 +29,6 @@ head(digital_skills)
 design_ds <- svydesign(ids = ~HH, strata = ~GEN , data = digital_skills,
                        nest = TRUE)
 
-Nurultaie
-Mizahtaie##
 
 # calculating the mean of ??
 svymean(~Gender, design_ds)
