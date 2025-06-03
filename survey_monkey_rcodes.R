@@ -15,7 +15,7 @@ library(survey)
 # Exerting excel data into R
 # Calling it Digital Skills Data
 # Before doing this, make sure the excel is in the file!
-digital_skills <- read_excel("AITI/AITIsurveymonkey/Brunei ICT Survey 2024.xlsx")
+digital_skills <- read_excel("Brunei ICT Survey 2024.xlsx")
 
 # To see if its the correct data sets
 head(digital_skills)
